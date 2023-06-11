@@ -1,2 +1,2 @@
-# ants
-Ant Colony Optimization in Julia
+# Ants
+Ant Colony Optimization (ACO) algorithm for Traveling Salesman Problem implemented in Julia.
