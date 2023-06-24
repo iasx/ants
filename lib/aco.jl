@@ -1,7 +1,7 @@
 using StatsBase
 using LinearAlgebra
 
-struct ACOResult
+struct Solution
   length::Float64
   path::Vector{Int64}
   trails::Matrix{Float64}
@@ -47,7 +47,7 @@ function ACO(
   β::Float64=1.0,
   ρ::Float64=0.75,
   Q::Float64=5.0
-)::ACOResult
+)::Solution
   bestPath = nothing
   bestLen = Inf
 
@@ -97,5 +97,5 @@ function ACO(
     end
   end
 
-  return ACOResult(bestLen, bestPath, P)
+  return Solution(bestLen, bestPath, P)
 end
